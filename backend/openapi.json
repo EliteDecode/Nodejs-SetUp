@@ -1,0 +1,666 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Tradeet",
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "http://localhost:5000"
+    }
+  ],
+  "tags": [
+    {
+      "name": "Auth"
+    },
+    {
+      "name": "Seller"
+    },
+    {
+      "name": "Profile"
+    },
+    {
+      "name": "Product"
+    },
+    {
+      "name": "Cart"
+    },
+    {
+      "name": "Review"
+    },
+    {
+      "name": "Wishlist"
+    }
+  ],
+  "paths": {
+    "/api/v1/auth/register": {
+      "post": {
+        "tags": [
+          "Auth"
+        ],
+        "summary": "Register",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "example": {
+                  "fullname": "Test user",
+                  "email": "test@gmail.com",
+                  "password": "somepassword"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/auth/login": {
+      "post": {
+        "tags": [
+          "Auth"
+        ],
+        "summary": "Login",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "example": {
+                  "email": "vee@gmail.com",
+                  "password": "newsecret"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/auth/verify-email/{token}": {
+      "post": {
+        "tags": [
+          "Auth"
+        ],
+        "summary": "Verify Email",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "example": {
+                  "code": 572694
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "token",
+            "in": "path",
+            "schema": {
+              "type": "string"
+            },
+            "required": true,
+            "example": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjM4MzM0MjMzMzZjY2FlZDhiMTE4ZjEiLCJyb2xlIjoidXNlciIsImlhdCI6MTcxNDk1OTE3NiwiZXhwIjoxNzE0OTU5Mjk2fQ.W3aP64_i2aqAsD79U4Lph0HdIAGNa3g1LjnS2hKqWV0"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/auth/resend-verification-code": {
+      "post": {
+        "tags": [
+          "Auth"
+        ],
+        "summary": "Resend Verify Email",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "example": {
+                  "email": "test@gmail.com"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/auth/forgot-password": {
+      "post": {
+        "tags": [
+          "Auth"
+        ],
+        "summary": "Forgot Password",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "example": {
+                  "email": "test@gmail.com"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/auth/resend-forgotPassword-code": {
+      "post": {
+        "tags": [
+          "Auth"
+        ],
+        "summary": "Resend Forgot Password",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "example": {
+                  "email": "test@gmail.com"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/auth/verify-forgotPassword-code/{token}": {
+      "post": {
+        "tags": [
+          "Auth"
+        ],
+        "summary": "Verify Forgot Password",
+        "requestBody": {
+          "content": {}
+        },
+        "parameters": [
+          {
+            "name": "token",
+            "in": "path",
+            "schema": {
+              "type": "string"
+            },
+            "required": true,
+            "example": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjM4MzM0MjMzMzZjY2FlZDhiMTE4ZjEiLCJyb2xlIjoidXNlciIsImlhdCI6MTcxNDk1OTI0OSwiZXhwIjoxNzE0OTU5MzY5fQ.DRDBhZLLuzwMySECwHsHe4KZcwYBtP0KKrDZxK57MIg"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/auth/reset-password": {
+      "post": {
+        "tags": [
+          "Auth"
+        ],
+        "summary": "Reset Password",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "example": {
+                  "email": "test@gmail.com",
+                  "password": "newpassword"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/seller/send-code": {
+      "post": {
+        "tags": [
+          "Seller"
+        ],
+        "summary": "Send Code",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "example": {
+                  "email": "vee@gmail.com"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/seller/resend-code": {
+      "post": {
+        "tags": [
+          "Seller"
+        ],
+        "summary": "Resend Code",
+        "requestBody": {
+          "content": {}
+        },
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/seller/create-business": {
+      "post": {
+        "tags": [
+          "Seller"
+        ],
+        "summary": "Create Business",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "example": {
+                  "businessName": "veebusiness",
+                  "businessRegistrationNumber": 45354,
+                  "code": 821426,
+                  "country": "Nigeria",
+                  "state": "Lagos",
+                  "zipCode": 676989,
+                  "addressOne": "Earth"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/seller/get-business": {
+      "get": {
+        "tags": [
+          "Seller"
+        ],
+        "summary": "Get Business",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/profile/create-address": {
+      "post": {
+        "tags": [
+          "Profile"
+        ],
+        "summary": "Add Address",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "example": {
+                  "location": "benin",
+                  "name": "vee",
+                  "phoneNo": "0909"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/profile/user-address": {
+      "get": {
+        "tags": [
+          "Profile"
+        ],
+        "summary": "Get User Address",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/profile/edit-address/{id}": {
+      "patch": {
+        "tags": [
+          "Profile"
+        ],
+        "summary": "Update Address",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "example": {
+                  "location": "uyo",
+                  "name": "favour",
+                  "phoneNo": "0909"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "schema": {
+              "type": "string"
+            },
+            "required": true,
+            "example": "6638340d3336ccaed8b11905"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/profile/delete-address/{id}": {
+      "delete": {
+        "tags": [
+          "Profile"
+        ],
+        "summary": "Delete Address",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "schema": {
+              "type": "string"
+            },
+            "required": true,
+            "example": "663835180d4da6f944e2dff0"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/products": {
+      "post": {
+        "tags": [
+          "Product"
+        ],
+        "summary": "Add Product",
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "type": "string",
+                    "example": "Classic Jean"
+                  },
+                  "description": {
+                    "type": "string",
+                    "example": "Quality Jean"
+                  },
+                  "price": {
+                    "type": "integer",
+                    "example": "299"
+                  },
+                  "image": {
+                    "type": "string",
+                    "format": "binary"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {}
+            }
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "Product"
+        ],
+        "summary": "Get Seller Product",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/products/{id}": {
+      "get": {
+        "tags": [
+          "Product"
+        ],
+        "summary": "Get Product",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "schema": {
+              "type": "string"
+            },
+            "required": true,
+            "example": "663d73a356ccf1ec4d6daf89"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {}
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Product"
+        ],
+        "summary": "Delete Product",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "schema": {
+              "type": "string"
+            },
+            "required": true,
+            "example": "663d73a356ccf1ec4d6daf89"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/wishlist": {
+      "post": {
+        "tags": [
+          "Wishlist"
+        ],
+        "summary": "Add To Wishlist",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "example": {
+                  "productId": "ufyufufufuhyuf"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {}
+            }
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "Wishlist"
+        ],
+        "summary": "Get User Wishlist",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/wishlist/{productId}": {
+      "delete": {
+        "tags": [
+          "Wishlist"
+        ],
+        "summary": "Remove From Wishlist",
+        "parameters": [
+          {
+            "name": "productId",
+            "in": "path",
+            "schema": {
+              "type": "string"
+            },
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {}
+            }
+          }
+        }
+      }
+    }
+  }
+}

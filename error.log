@@ -1,0 +1,65 @@
+{"date":"20240315","time":"13:55:25","level":"error","message":{"module":"Auth"}}
+{"date":"20240315","time":"13:58:25","level":"error","module":"Auth","message":"E11000 duplicate key error collection: tradeet.users index: Email_1 dup key: { Email: \"samuelayodeji2478@gmail.com\" }"}
+{"date":"20240315","time":"13:59:52","level":"error","module":"Auth","message":"E11000 duplicate key error collection: tradeet.users index: Email_1 dup key: { Email: \"samuelayodeji2478@gmail.com\" }"}
+{"date":"20240319","time":"20:30:00","level":"error","module":"Auth","message":"User not found"}
+{"date":"20240319","time":"20:43:05","level":"error","module":"Auth","message":"User not found"}
+{"date":"20240402","time":"14:01:56","level":"error","module":"Product","message":"ProductModel is not defined"}
+{"date":"20240413","time":"14:49:13","level":"error","module":"Auth","message":"User not found"}
+{"date":"20240413","time":"15:03:51","level":"error","module":"Auth","message":"User already exists"}
+{"date":"20240413","time":"15:04:07","level":"error","module":"Auth","message":"User not found"}
+{"date":"20240413","time":"15:14:41","level":"error","module":"Product","message":"E11000 duplicate key error collection: Tradeet.products index: bookId_1_reviewer_1 dup key: { bookId: null, reviewer: null }"}
+{"date":"20240413","time":"15:18:36","level":"error","module":"Product","message":"E11000 duplicate key error collection: Tradeet.products index: bookId_1_reviewer_1 dup key: { bookId: null, reviewer: null }"}
+{"date":"20240413","time":"15:19:59","level":"error","module":"Product","message":"E11000 duplicate key error collection: Tradeet.products index: bookId_1_reviewer_1 dup key: { bookId: null, reviewer: null }"}
+{"date":"20240413","time":"15:20:44","level":"error","module":"Product","message":"E11000 duplicate key error collection: Tradeet.products index: bookId_1_reviewer_1 dup key: { bookId: null, reviewer: null }"}
+{"date":"20240413","time":"15:23:55","level":"error","module":"Product","message":"E11000 duplicate key error collection: Tradeet.products index: bookId_1_reviewer_1 dup key: { bookId: null, reviewer: null }"}
+{"date":"20240413","time":"15:24:40","level":"error","module":"Product","message":"E11000 duplicate key error collection: Tradeet.products index: bookId_1_reviewer_1 dup key: { bookId: null, reviewer: null }"}
+{"date":"20240413","time":"15:25:06","level":"error","module":"Product","message":"E11000 duplicate key error collection: Tradeet.products index: bookId_1_reviewer_1 dup key: { bookId: null, reviewer: null }"}
+{"date":"20240413","time":"15:25:07","level":"error","module":"Product","message":"E11000 duplicate key error collection: Tradeet.products index: bookId_1_reviewer_1 dup key: { bookId: null, reviewer: null }"}
+{"date":"20240413","time":"15:25:45","level":"error","module":"Product","message":"E11000 duplicate key error collection: Tradeet.products index: bookId_1_reviewer_1 dup key: { bookId: null, reviewer: null }"}
+{"date":"20240413","time":"15:26:03","level":"error","module":"Product","message":"E11000 duplicate key error collection: Tradeet.products index: bookId_1_reviewer_1 dup key: { bookId: null, reviewer: null }"}
+{"date":"20240413","time":"15:26:04","level":"error","module":"Product","message":"E11000 duplicate key error collection: Tradeet.products index: bookId_1_reviewer_1 dup key: { bookId: null, reviewer: null }"}
+{"date":"20240413","time":"15:26:05","level":"error","module":"Product","message":"E11000 duplicate key error collection: Tradeet.products index: bookId_1_reviewer_1 dup key: { bookId: null, reviewer: null }"}
+{"date":"20240415","time":"15:26:24","level":"error","module":"Auth","message":"User already exists"}
+{"date":"20240418","time":"16:40:22","level":"error","module":"Auth","message":"User not found"}
+{"date":"20240418","time":"16:40:37","level":"error","module":"Auth","message":"User not found"}
+{"date":"20240418","time":"16:40:47","level":"error","module":"Auth","message":"User not found"}
+{"date":"20240418","time":"16:53:15","level":"error","module":"Auth","message":"User not found"}
+{"date":"20240418","time":"16:53:21","level":"error","module":"Auth","message":"User not found"}
+{"date":"20240418","time":"16:53:54","level":"error","module":"Auth","message":"User not found"}
+{"date":"20240418","time":"16:55:40","level":"error","module":"Auth","message":"User not found"}
+{"date":"20240418","time":"16:56:53","level":"error","module":"Auth","message":"User not found"}
+{"date":"20240418","time":"16:59:17","level":"error","module":"Auth","message":"User already exists"}
+{"date":"20240421","time":"20:14:47","level":"error","module":"Auth","message":"User not found"}
+{"date":"20240415","time":"15:43:40","level":"error","module":"Auth","message":"User already exists"}
+{"date":"20240423","time":"01:40:40","level":"error","module":"Auth","message":"User not found or is not verified."}
+{"date":"20240423","time":"02:44:50","level":"error","module":"Auth","message":"User not found or is not verified."}
+{"date":"20240423","time":"02:45:07","level":"error","module":"Auth","message":"Invalid login: 535-5.7.8 Username and Password not accepted. For more information, go to\n535 5.7.8  https://support.google.com/mail/?p=BadCredentials h6-20020a170906110600b00a5827d2f6f4sm878645eja.115 - gsmtp"}
+{"date":"20240423","time":"02:45:07","level":"error","module":"Auth","message":"Invalid login: 535-5.7.8 Username and Password not accepted. For more information, go to\n535 5.7.8  https://support.google.com/mail/?p=BadCredentials h6-20020a170906110600b00a5827d2f6f4sm878645eja.115 - gsmtp"}
+{"date":"20240424","time":"11:35:21","level":"error","module":"Auth","message":"Invalid login: 535-5.7.8 Username and Password not accepted. For more information, go to\n535 5.7.8  https://support.google.com/mail/?p=BadCredentials n26-20020a1709061d1a00b00a525860ecc5sm8165934ejh.180 - gsmtp"}
+{"date":"20240424","time":"11:35:21","level":"error","module":"Auth","message":"Invalid login: 535-5.7.8 Username and Password not accepted. For more information, go to\n535 5.7.8  https://support.google.com/mail/?p=BadCredentials n26-20020a1709061d1a00b00a525860ecc5sm8165934ejh.180 - gsmtp"}
+{"date":"20240424","time":"11:36:05","level":"error","module":"Auth","message":"Invalid login: 535-5.7.8 Username and Password not accepted. For more information, go to\n535 5.7.8  https://support.google.com/mail/?p=BadCredentials g2-20020a170906348200b00a51da296f66sm8146344ejb.41 - gsmtp"}
+{"date":"20240424","time":"11:36:05","level":"error","module":"Auth","message":"Invalid login: 535-5.7.8 Username and Password not accepted. For more information, go to\n535 5.7.8  https://support.google.com/mail/?p=BadCredentials g2-20020a170906348200b00a51da296f66sm8146344ejb.41 - gsmtp"}
+{"date":"20240424","time":"11:36:39","level":"error","module":"Auth","message":"User already exists"}
+{"date":"20240424","time":"11:37:15","level":"error","module":"Auth","message":"Invalid login: 535-5.7.8 Username and Password not accepted. For more information, go to\n535 5.7.8  https://support.google.com/mail/?p=BadCredentials n4-20020a170906378400b00a522fb5587esm6078105ejc.144 - gsmtp"}
+{"date":"20240424","time":"11:37:15","level":"error","module":"Auth","message":"Invalid login: 535-5.7.8 Username and Password not accepted. For more information, go to\n535 5.7.8  https://support.google.com/mail/?p=BadCredentials n4-20020a170906378400b00a522fb5587esm6078105ejc.144 - gsmtp"}
+{"date":"20240424","time":"11:39:26","level":"error","module":"Auth","message":"Invalid login: 535-5.7.8 Username and Password not accepted. For more information, go to\n535 5.7.8  https://support.google.com/mail/?p=BadCredentials gw5-20020a170906f14500b00a523be56940sm8189836ejb.136 - gsmtp"}
+{"date":"20240424","time":"11:39:26","level":"error","module":"Auth","message":"Invalid login: 535-5.7.8 Username and Password not accepted. For more information, go to\n535 5.7.8  https://support.google.com/mail/?p=BadCredentials gw5-20020a170906f14500b00a523be56940sm8189836ejb.136 - gsmtp"}
+{"date":"20240424","time":"11:39:47","level":"error","module":"Auth","message":"Invalid login: 535-5.7.8 Username and Password not accepted. For more information, go to\n535 5.7.8  https://support.google.com/mail/?p=BadCredentials bq22-20020a056402215600b005722ce89ae2sm991038edb.38 - gsmtp"}
+{"date":"20240424","time":"11:39:47","level":"error","module":"Auth","message":"Invalid login: 535-5.7.8 Username and Password not accepted. For more information, go to\n535 5.7.8  https://support.google.com/mail/?p=BadCredentials bq22-20020a056402215600b005722ce89ae2sm991038edb.38 - gsmtp"}
+{"date":"20240424","time":"11:41:33","level":"error","module":"Auth","message":"User already exists"}
+{"date":"20240424","time":"11:42:32","level":"error","module":"Auth","message":"Invalid login: 535-5.7.8 Username and Password not accepted. For more information, go to\n535 5.7.8  https://support.google.com/mail/?p=BadCredentials bw26-20020a170906c1da00b00a57bf8305efsm2791309ejb.152 - gsmtp"}
+{"date":"20240424","time":"11:42:32","level":"error","module":"Auth","message":"Invalid login: 535-5.7.8 Username and Password not accepted. For more information, go to\n535 5.7.8  https://support.google.com/mail/?p=BadCredentials bw26-20020a170906c1da00b00a57bf8305efsm2791309ejb.152 - gsmtp"}
+{"date":"20240424","time":"11:44:17","level":"error","module":"Auth","message":"Invalid login: 535-5.7.8 Username and Password not accepted. For more information, go to\n535 5.7.8  https://support.google.com/mail/?p=BadCredentials dq16-20020a170907735000b00a524318c380sm8213629ejc.80 - gsmtp"}
+{"date":"20240424","time":"11:44:17","level":"error","module":"Auth","message":"Invalid login: 535-5.7.8 Username and Password not accepted. For more information, go to\n535 5.7.8  https://support.google.com/mail/?p=BadCredentials dq16-20020a170907735000b00a524318c380sm8213629ejc.80 - gsmtp"}
+{"date":"20240424","time":"11:45:54","level":"error","module":"Auth","message":"User already exists"}
+{"date":"20240424","time":"11:46:11","level":"error","module":"Auth","message":"Invalid login: 535-5.7.8 Username and Password not accepted. For more information, go to\n535 5.7.8  https://support.google.com/mail/?p=BadCredentials x12-20020adfdd8c000000b00349f139dbe4sm16860449wrl.91 - gsmtp"}
+{"date":"20240424","time":"11:46:11","level":"error","module":"Auth","message":"Invalid login: 535-5.7.8 Username and Password not accepted. For more information, go to\n535 5.7.8  https://support.google.com/mail/?p=BadCredentials x12-20020adfdd8c000000b00349f139dbe4sm16860449wrl.91 - gsmtp"}
+{"date":"20240424","time":"11:47:27","level":"error","module":"Auth","message":"Invalid login: 535-5.7.8 Username and Password not accepted. For more information, go to\n535 5.7.8  https://support.google.com/mail/?p=BadCredentials o14-20020a05600c510e00b00419f572671dsm14998866wms.20 - gsmtp"}
+{"date":"20240424","time":"11:47:27","level":"error","module":"Auth","message":"Invalid login: 535-5.7.8 Username and Password not accepted. For more information, go to\n535 5.7.8  https://support.google.com/mail/?p=BadCredentials o14-20020a05600c510e00b00419f572671dsm14998866wms.20 - gsmtp"}
+{"date":"20240424","time":"11:48:37","level":"error","module":"Auth","message":"Invalid login: 535-5.7.8 Username and Password not accepted. For more information, go to\n535 5.7.8  https://support.google.com/mail/?p=BadCredentials z13-20020a170906434d00b00a51e5813f4fsm8335287ejm.19 - gsmtp"}
+{"date":"20240424","time":"11:48:37","level":"error","module":"Auth","message":"Invalid login: 535-5.7.8 Username and Password not accepted. For more information, go to\n535 5.7.8  https://support.google.com/mail/?p=BadCredentials z13-20020a170906434d00b00a51e5813f4fsm8335287ejm.19 - gsmtp"}
+{"date":"20240424","time":"11:49:21","level":"error","module":"Auth","message":"User already exists"}
+{"date":"20240424","time":"11:51:26","level":"error","module":"Auth","message":"Invalid login: 535-5.7.8 Username and Password not accepted. For more information, go to\n535 5.7.8  https://support.google.com/mail/?p=BadCredentials k18-20020a1709063fd200b00a524b33fd9asm8167192ejj.68 - gsmtp"}
+{"date":"20240424","time":"11:51:26","level":"error","module":"Auth","message":"Invalid login: 535-5.7.8 Username and Password not accepted. For more information, go to\n535 5.7.8  https://support.google.com/mail/?p=BadCredentials k18-20020a1709063fd200b00a524b33fd9asm8167192ejj.68 - gsmtp"}
+{"date":"20240424","time":"12:07:48","level":"error","module":"Auth","message":"Invalid login: 535-5.7.8 Username and Password not accepted. For more information, go to\n535 5.7.8  https://support.google.com/mail/?p=BadCredentials f7-20020a170906c08700b00a51a80028e8sm8229101ejz.65 - gsmtp"}
+{"date":"20240424","time":"12:07:48","level":"error","module":"Auth","message":"Invalid login: 535-5.7.8 Username and Password not accepted. For more information, go to\n535 5.7.8  https://support.google.com/mail/?p=BadCredentials f7-20020a170906c08700b00a51a80028e8sm8229101ejz.65 - gsmtp"}
